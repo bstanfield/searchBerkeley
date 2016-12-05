@@ -1,0 +1,70 @@
+/*GENERAL*/
+p {
+  font-size: 15px;
+}
+
+img {
+  width: 150px;
+}
+
+.tiny {
+  width: 80px;
+  display: inline;
+  vertical-align: middle !important;
+  margin-right: 10px;
+}
+
+.button-group .btn {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.share-button {
+  width: 29%;
+  margin-top: -3px;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.inline-info {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/*MODIFIED BOOTSTRAP*/
+.container {
+  max-width: 800px;
+}
+
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.primary-search {
+  width: 100%;
+  display: inline;
+}
+
+.primary-search .form-control {
+  width: 70% !important;
+  display: inline-block;
+}
+
+.navbar-form {
+  padding-right: 0px !important;
+}

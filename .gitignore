@@ -1,4 +1,8 @@
+# Added by Ben
 .DS_Store
+bower_components
+tmp
+
 # Logs
 logs
 *.log

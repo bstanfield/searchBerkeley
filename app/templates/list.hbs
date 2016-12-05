@@ -1,0 +1,8 @@
+<h1 class="header">Berkeley Restaurants</h1>
+You're searching for <strong>{{foodItem}}</strong> in Berkeley, CA.<br><br>
+<div class="primary-search">
+{{input class="form-control share" type="text" placeholder="Search restaurants" value=foodItem}}
+<input class="btn btn-success share-button" type="submit" {{action "search"}}/>
+</div>
+
+{{outlet}}

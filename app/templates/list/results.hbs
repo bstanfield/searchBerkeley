@@ -1,0 +1,17 @@
+<br><br>
+{{outlet}}
+{{!-- {{#each model.businesses as |data|}}
+{{/each}} --}}
+{{#each model.businesses as |data|}}
+  <br>
+  <img class="inline" src="{{data.image_url}}">
+    <div class="inline inline-info">
+      <a target='blank' href='{{data.url}}'><h3>{{data.name}}</h3></a>
+        <img class="tiny inline" src="{{data.rating_img_url}}"><p class="inline">({{data.review_count}} Reviews)</p>
+    </div>
+  <p>{{data.snippet_text}}</p><br>
+  <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>&nbsp;&nbsp;{{data.location.address}}</p>
+  {{#not-berkeley data=data}}{{/not-berkeley}}
+
+  <hr>
+{{/each}}

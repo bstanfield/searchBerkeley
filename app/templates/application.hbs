@@ -1,0 +1,39 @@
+<nav class="navbar navbar-default">
+  <div class="container navigation-container">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        {{#link-to 'list' class='navbar-brand'}}searchBerkeley{{/link-to}}
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>{{#link-to 'about'}}About{{/link-to}}</li>
+          <li>{{#link-to 'bens-favorites'}}Ben's Favorites{{/link-to}}</li>
+        </ul>
+        {{!-- <form class="navbar-form navbar-right">
+          <div class="form-group">
+            {{input class="form-control share" type="text" placeholder="Search restaurants" value=foodItem}}
+          </div>
+          <input class="btn btn-success share-button" type="submit" {{action "search"}}/>
+        </form> --}}
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </div>
+</nav>
+
+<div class="container">
+  {{outlet}}
+  <br><br><br><br><br>
+  <hr>
+  <footer>
+  Ben Stanfield - ITP 404 Modern Technologies of Web Development
+  </footer>
+</div>

@@ -1,0 +1,5 @@
+{{#if city}}
+<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>&nbsp;&nbsp;This restaurant isn't in Berkeley, but it's in the neighboring city of <strong>{{data.location.city}}.</strong>
+{{else}}
+<span class="glyphicon glyphicon-heart red" aria-hidden="true"></span>&nbsp;&nbsp;This restaurant is in <strong>Berkeley</strong>
+{{/if}}
